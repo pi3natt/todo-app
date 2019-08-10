@@ -1,0 +1,31 @@
+
+.sidebar {
+  // z-index: 11;
+  background: #FCCCBB;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 70px;
+  padding-bottom: 30px;
+  transition: 300ms all linear;
+
+  .headlogo{
+    font-family:Courier;
+    font-weight: 800;
+    color: #F26C3D;
+  }
+
+  .sidebar-item {
+    padding: 1.2rem 1rem;
+    transition: 500ms all ease-in-out;
+    &:hover {
+      a {
+        color: #03a9f3;
+      }
+    }
+
+
+  }
+
+}
