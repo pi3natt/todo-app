@@ -1,7 +1,8 @@
 
 .sidebar {
   // z-index: 11;
-  background: #FCCCBB;
+  // background: #FCCCBB;
+  background-image: linear-gradient( #FCCCBB, #FFD89E);
   overflow-y: auto;
   position: fixed;
   left: 0;
@@ -14,18 +15,37 @@
     font-family:Courier;
     font-weight: 800;
     color: #F26C3D;
+    margin-top: 22px;
+    text-align: center;
   }
 
   .sidebar-item {
-    padding: 1.2rem 1rem;
-    transition: 500ms all ease-in-out;
-    &:hover {
-      a {
-        color: #03a9f3;
-      }
-    }
-
+    margin: 20px;
+    margin-bottom: 40px;
+    color: #ffffff;
 
   }
 
 }
+.fa{
+  font-size: 32px;
+
+}
+.fa:hover{
+  cursor: pointer;
+}
+// .fa:focus{
+//   color: #F26C3D;
+// }
+
+.fa-grav:focus{
+ border: #F26C3D;
+}
+// .bar:hover{
+//   height: 30px;
+//   width: 5px;
+//   color: #F26C3D;
+
+//  }
+
+
