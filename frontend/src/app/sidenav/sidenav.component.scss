@@ -1,7 +1,4 @@
-
 .sidebar {
-  // z-index: 11;
-  // background: #FCCCBB;
   background-image: linear-gradient( #FCCCBB, #FFD89E);
   overflow-y: auto;
   position: fixed;
@@ -10,7 +7,6 @@
   width: 70px;
   padding-bottom: 30px;
   transition: 300ms all linear;
-
   .headlogo{
     font-family:Courier;
     font-weight: 800;
@@ -33,19 +29,32 @@
 }
 .fa:hover{
   cursor: pointer;
+  color: #F26C3D;
+  opacity: 0.4;
 }
-// .fa:focus{
-//   color: #F26C3D;
+
+.fa:focus{
+ color: #F26C3D;
+ outline: none;
+}
+
+.fa-bars{
+  bottom: 10px;
+  left: 21px;
+  position: fixed;
+}
+
+// .hamburgur {
+
+//   @media (min-width: 992px) {
+//     display: none;
+//   }
 // }
 
-.fa-grav:focus{
- border: #F26C3D;
+.hideNav {
+  width: 70px !important;
 }
-// .bar:hover{
-//   height: 30px;
-//   width: 5px;
-//   color: #F26C3D;
 
-//  }
-
-
+.showNav {
+  width: 100px !important;
+}
