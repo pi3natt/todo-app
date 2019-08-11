@@ -5,11 +5,13 @@
 
 <div class="card" style="width: 18rem;">
   <div class="card-body ">
-    <h6 class="card-title text-center">nat</h6>
-    <div class="input-group">
-        <input type="text"
+    <h6 class="card-title text-center">Todö Task</h6>
+    <div class="input-group mb-2">
+      <div class="col-10 pl-0">
+      <input type="text"
               #itemTitle class="form-control"
-              placeholder="Add todo task" >
+              style="cursor: pointer;"
+              placeholder="Add todo task" ></div>
       <button type="button col-1" class="btn btn-outline-warning"
               (click)= onAdd(itemTitle)>
         <i class="fa fa-plus" aria-hidden="true"></i>
