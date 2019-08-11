@@ -5,8 +5,10 @@
   left: 0;
   height: 100%;
   width: 70px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
   transition: 300ms all linear;
+
+
   .headlogo{
     font-family:Courier;
     font-weight: 800;
@@ -29,13 +31,17 @@
 }
 .fa:hover{
   cursor: pointer;
-  color: #F26C3D;
-  opacity: 0.4;
+  // color: #F26C3D;
+  // opacity: 0.4;
 }
 
 .fa:focus{
  color: #F26C3D;
  outline: none;
+  // .fa:hover{
+  //   opacity: 1;
+  // }
+
 }
 
 .fa-bars{
@@ -52,9 +58,17 @@
 // }
 
 .hideNav {
-  width: 70px !important;
+ color: black;
 }
 
 .showNav {
-  width: 100px !important;
+  color: #F26C3D;
 }
+
+// .focus:hover{
+//   border-left: 4px solid plum;
+//   padding-left: 0;
+//   height: 55px;
+//   position: relative !important;
+// }
+

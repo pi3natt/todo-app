@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit {
-  showSidebar:boolean;
+  showSidebar = true ;
   fullWidth: number;
 
   constructor() { }

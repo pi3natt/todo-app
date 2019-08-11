@@ -1,21 +1,29 @@
 <div class="sidebar text-center">
   <div class="headlogo pb-0"><img src ="assets/compass.png" style="height: 30px;width: 30px;"><br>TODÖ</div>
-  <div class="sidebar-item">
-    <i class="fa fa-grav " routerLink="/main" aria-hidden="true"></i>
-  </div>
-  <div class="sidebar-item">
-      <i class="fa fa-map-o" routerLink="/dashboard" aria-hidden="true"></i>
-  </div>
-  <div class="sidebar-item">
-      <i class="fa fa-rocket" aria-hidden="true"></i>
-  </div>
+  <ul class="px-0">
+  <li >
+    <div class="sidebar-item mx-0">
+      <i class="fa fa-grav " routerLink="/main" aria-hidden="true"></i>
+    </div>
+  </li>
+  <li>
+    <div class="sidebar-item mx-0">
+        <i class="fa fa-map-o" routerLink="/dashboard" aria-hidden="true"></i>
+    </div>
+  </li>
+  <li>
+    <div class="sidebar-item mx-0">
+        <i class="fa fa-rocket" aria-hidden="true"></i>
+    </div>
+  </li>
 
 
   <div [ngClass]="{'hideNav': !showSidebar,'showNav': showSidebar}"
        class="sidebar-item"
        (click)="toggleNavbar()">
-      <i class="fa fa-bars" aria-hidden="true" ></i>
+      <i class="fa fa-bars" aria-hidden="true"></i>
   </div>
+  </ul>
   <!-- <a [ngClass]="{'l-200': showSidebar, 'l-100': !showSidebar}" class="hamburgur"
      (click)="showSidebar = !showSidebar">
     <i class="fa fa-bars sidebar-item" aria-hidden="true"></i>

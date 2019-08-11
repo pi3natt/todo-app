@@ -1,22 +1,35 @@
 <div class="card-header">
-  <div class="head">My Todolist<hr></div>
-  <div class="card-body row">
-    <div>
-      day
-      <div class="row">
-        <input class="form-control col-10 " type="text" placeholder="Add todolist">
-        <button type="button col-1" class="btn btn-outline-warning">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
-      </div>
+  My <span style="color: #F26C3D">Todo</span>list
+  <hr />
+</div>
 
+<div class="card" style="width: 18rem;">
+  <div class="card-body ">
+    <h6 class="card-title text-center">nat</h6>
+    <div class="input-group">
+        <input type="text"
+              #itemTitle class="form-control"
+              placeholder="Add todo task" >
+      <button type="button col-1" class="btn btn-outline-warning"
+              (click)= onAdd(itemTitle)>
+        <i class="fa fa-plus" aria-hidden="true"></i>
+      </button>
+    </div>
 
-    </div>
-    <!-- <div class="card">
-      month
-    </div>
-    <div class="card">
-      year
-    </div> -->
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of todolistArray">
+       <!-- <div class="row"> -->
+        <span [class.text-success]="item.isChecked"
+              (click)="cheacked(item.$key,item.isChecked)">
+          <i class="fa fa-lg" [ngClass]="item.isChecked?'fa fa-hand-peace-o':'fa fa-hand-spock-o'"></i>
+        </span>
+        &nbsp;{{item.title}}
+        <span class="text-danger pull-right" (click)="delete(item.$key)">
+          <i class="fa fa-trash-o fa-lg"></i>
+        </span>
+      <!-- </div> -->
+      </li>
+    </ul>
+
   </div>
 </div>

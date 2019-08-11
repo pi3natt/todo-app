@@ -1,9 +1,10 @@
 .card-header{
   border: none;
-  height: 55px;
+  height: 60px;
   width: 100%;
   background: transparent;
-
+  font-size: 20px;
+  font-weight: 500;
 }
 .head{
   margin-top: 10px;
@@ -11,6 +12,7 @@
 }
 .card{
   margin: 20px;
+  border: transparent;
 }
 .btn:hover{
   color: #ffffff;
