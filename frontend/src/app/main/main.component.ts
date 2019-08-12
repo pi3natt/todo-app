@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TodoService } from './shared/todo.service';
 import { element, $ } from 'protractor';
+import { NgbModal,NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-main',
@@ -8,9 +10,14 @@ import { element, $ } from 'protractor';
   styleUrls: ['./main.component.scss'],
   providers: [TodoService]
 })
+
 export class MainComponent implements OnInit {
   todolistArray:any[];
-  constructor(private todoService: TodoService) { }
+  closeResult: string;
+  modal: NgbModalRef;
+
+  constructor(private todoService: TodoService,
+              private modalService: NgbModal) { }
 
   ngOnInit() {
     this.todoService.getToDoList().snapshotChanges()
@@ -43,5 +50,8 @@ export class MainComponent implements OnInit {
 
   }
 
+  open(content){
+    this.modal = this.modalService.open(content);
+  }
 
 }

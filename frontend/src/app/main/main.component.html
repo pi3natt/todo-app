@@ -20,7 +20,6 @@
 
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let item of todolistArray">
-       <!-- <div class="row"> -->
         <span [class.text-success]="item.isChecked"
               (click)="cheacked(item.$key,item.isChecked)">
           <i class="fa fa-lg" [ngClass]="item.isChecked?'fa fa-hand-peace-o':'fa fa-hand-spock-o'"></i>
@@ -29,9 +28,25 @@
         <span class="text-danger pull-right" (click)="delete(item.$key)">
           <i class="fa fa-trash-o fa-lg"></i>
         </span>
-      <!-- </div> -->
       </li>
     </ul>
 
   </div>
 </div>
+
+
+<!-- <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Delete confirmation</h4>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="dateOfBirth">Confirm to delete ?</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+    </div>
+</ng-template> -->
