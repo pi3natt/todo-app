@@ -4,6 +4,7 @@ import { MainComponent } from './main/main.component';
 import {DashboardComponent} from './dashboard/dashboard.component'
 
 const routes: Routes = [
+  {path:'',component :MainComponent},
   {path:'main',component :MainComponent},
   {path:'dashboard',component :DashboardComponent},
 

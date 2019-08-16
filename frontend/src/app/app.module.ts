@@ -4,7 +4,6 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 
-
 import { AppRoutingModule ,routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -26,7 +25,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MainComponent,
     SidenavComponent,
     DashboardComponent,
-    routingComponents
+    routingComponents,
   ],
   imports: [
     BrowserModule,
@@ -38,10 +37,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatIconModule,
     MatListModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
 
 
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
