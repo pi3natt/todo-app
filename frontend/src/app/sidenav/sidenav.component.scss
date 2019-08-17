@@ -8,7 +8,6 @@
   // padding-bottom: 30px;
   transition: 300ms all linear;
 
-
   .headlogo{
     font-family:Courier;
     font-weight: 800;
@@ -40,17 +39,11 @@
 }
 .fa:hover{
   cursor: pointer;
-  // color: #F26C3D;
-  // opacity: 0.4;
+  color: #F26C3D;
+
 }
-
 .fa:focus{
- color: #F26C3D;
- outline: none;
-  // .fa:hover{
-  //   opacity: 1;
-  // }
-
+  outline: none;
 }
 
 .fa-bars{
@@ -59,13 +52,6 @@
   position: fixed;
 }
 
-// .hamburgur {
-
-//   @media (min-width: 992px) {
-//     display: none;
-//   }
-// }
-
 .hideNav {
  color: black;
 }
@@ -73,11 +59,3 @@
 .showNav {
   color: #F26C3D;
 }
-
-// .focus:hover{
-//   border-left: 4px solid plum;
-//   padding-left: 0;
-//   height: 55px;
-//   position: relative !important;
-// }
-

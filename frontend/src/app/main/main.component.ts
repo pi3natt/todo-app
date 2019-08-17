@@ -29,7 +29,7 @@ export class MainComponent implements OnInit {
         this.todolistArray.push(x);
       })
       //sort array isChecked
-      this.todolistArray.sort((a,b)=>{
+      this.todolistArray.sort((a,b) => {
         return a.isChecked - b.isChecked;
       })
     })

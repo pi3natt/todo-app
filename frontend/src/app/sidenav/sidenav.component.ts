@@ -9,6 +9,7 @@ export class SidenavComponent implements OnInit {
   showSidebar = true ;
   fullWidth: number;
 
+
   constructor() { }
 
   ngOnInit() {
