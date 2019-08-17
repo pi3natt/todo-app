@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import { MainComponent } from './main/main.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
 
 // import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -26,6 +27,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SidenavComponent,
     DashboardComponent,
     routingComponents,
+    ScrollTopComponent,
   ],
   imports: [
     BrowserModule,
