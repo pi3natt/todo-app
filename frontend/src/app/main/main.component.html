@@ -3,30 +3,34 @@
   <hr />
 </div>
 
-<div class="card" style="width: 18rem;">
-  <div class="card-body ">
-    <h6 class="card-title text-center">Todö Task</h6>
+<div class="card px-2">
+  <div class="card-body col">
+    <h6 class="card-title ">Todö Task</h6>
     <div class="input-group mb-2">
-      <div class="col-10 pl-0">
+      <div class="col-sx-12 col-sm-11 col-md-11 col-lg-11 pl-0 pr-1 no-pd">
       <input type="text"
               #itemTitle class="form-control"
+              (keydown.enter)="onAdd(itemTitle)"
               style="cursor: pointer;"
-              placeholder="Add todo task" ></div>
-      <button type="button col-1" class="btn btn-outline-warning"
+              placeholder="Add todo list" ></div>
+      <button type="button"
+              class="btn btn-outline-warning col-sx-12 col-sm-1 col-md-1 col-lg-1 "
               (click)= onAdd(itemTitle)>
         <i class="fa fa-plus" aria-hidden="true"></i>
       </button>
     </div>
 
     <ul class="list-group">
-      <li class="list-group-item" *ngFor="let item of todolistArray">
+      <li class="list-group-item " *ngFor="let item of todolistArray">
         <span [class.text-success]="item.isChecked"
               (click)="cheacked(item.$key,item.isChecked)">
           <i class="fa fa-lg" [ngClass]="item.isChecked?'fa fa-hand-peace-o':'fa fa-hand-spock-o'"></i>
         </span>
-        &nbsp;{{item.title}}
+        <span class="breakword pl-2" style="width: 40px;">
+          &nbsp;{{item.title}}
+        </span>
         <span class="text-danger pull-right" (click)="delete(item.$key)">
-          <i class="fa fa-trash-o fa-lg"></i>
+          <i class="fa fa-trash-o fa-lg "></i>
         </span>
       </li>
     </ul>

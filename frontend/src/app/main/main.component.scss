@@ -12,11 +12,25 @@
 }
 .card{
   margin: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
   border: transparent;
+  background-color: #ffffff;
+
 }
 .btn:hover{
   color: #ffffff;
 }
 .fa:hover{
   cursor: pointer;
+}
+
+@media (max-width:575px){
+  .no-pd{
+    padding-bottom: 4px;
+  }
+  .fix{
+    padding-bottom: 10px;
+  }
+
 }

@@ -54,4 +54,6 @@ export class MainComponent implements OnInit {
     this.modal = this.modalService.open(content);
   }
 
+
+
 }
