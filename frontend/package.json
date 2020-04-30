@@ -27,7 +27,7 @@
     "core-js": "^2.5.4",
     "firebase": "^6.3.5",
     "font-awesome": "^4.7.0",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "ngx-bootstrap": "^5.1.1",
     "popper.js": "^1.14.7",
     "rxjs": "~6.5.2",
